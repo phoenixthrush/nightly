@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Website config ˚°◦-`❤´-◦°˚ -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Styling ˗ˋ꒰❤꒱ˊ˗ -->
+        <link href="assets/css/font-awesome/all.min.css" rel="stylesheet" />
+        <link href="assets/css/webfonts/all-webfonts.css" rel="stylesheet" />
+        <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- SEO ʕっ• ᴥ • ʔっ -->
+        <title>Phoenixthrush's Website ❤️</title>
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Phoenixthrush" />
+        <meta name="description" content="Hey I'm Phoenixthrush and I host all my projects and my website on my GitHub account, check it out if you want. Contact me if you want and peace out!" />
+
+        <!-- Open Graph◝⁽ˆωˆ⁾⸍ -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.phoenixthrush.com/" />
+        <meta property="og:title" content="PhoeniHey I'm Phoenixthrush and I host all my projects and my website on my GitHub account, check it out if you want. Contact me if you want and peace out!" />
+        <meta property="og:image" content="https://www.phoenixthrush.com/assets/favicon/android-chrome-512x512.png" />
+
+        <!-- Twitter ໒( •́ ω •̀ )७ -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.phoenixthrush.com/" />
+        <meta property="twitter:title" content="Phoenixthrush's Website ❤️" />
+        <meta property="twitter:description" content="Hey I'm Phoenixthrush and I host all my projects and my website on my GitHub account, check it out if you want. Contact me if you want and peace out!" />
+        <meta property="twitter:image" content="https://www.phoenixthrush.com/assets/favicon/android-chrome-512x512.png" />
+
+        <!-- Favicon ヾ(^ω^ゞ) -->
+        <link rel="apple-touch-icon" sizes="180x180" href="https://www.phoenixthrush.com/assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="https://www.phoenixthrush.com/assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="https://www.phoenixthrush.com/assets/favicon/android-chrome-192x192.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="https://www.phoenixthrush.com/assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="https://www.phoenixthrush.com/assets/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="https://www.phoenixthrush.com/assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <link rel="shortcut icon" href="https://www.phoenixthrush.com/assets/favicon/favicon.ico" />
+        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="msapplication-TileImage" content="https://www.phoenixthrush.com/assets/favicon/mstile-144x144.png" />
+        <meta name="msapplication-config" content="https://www.phoenixthrush.com/assets/favicon/browserconfig.xml" />
+        <meta name="theme-color" content="#000000" />
+
+        <style>
+            html {
+                height: 100%;
+            }
+
+            body {
+                font-family: "Montserrat";
+                letter-spacing: 0.075em;
+                background-blend-mode: overlay;
+                background-color: #292a2d;
+
+                background-image: url("assets/images/banner.webp");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+
+            hr {
+                margin: 0 auto;
+                height: 0px;
+                width: 35%;
+
+                border: none;
+                border-top: 5px solid white;
+                border-radius: 5px;
+
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+            }
+
+            .glow-on-hover {
+                width: 85%;
+                height: 55px;
+                border: none;
+                outline: none;
+                color: #fff;
+                cursor: pointer;
+                position: relative;
+                z-index: 0;
+                border-radius: 15px;
+            }
+
+            .glow-on-hover:before {
+                content: "";
+                background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                background-size: 400%;
+                z-index: -1;
+                filter: blur(5px);
+                width: calc(100% + 4px);
+                height: calc(100% + 4px);
+                animation: glowing 20s linear infinite;
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+                border-radius: 10px;
+            }
+
+            .glow-on-hover:hover:before {
+                opacity: 1;
+            }
+
+            .glow-on-hover:after {
+                z-index: -1;
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: #ed4933;
+                left: 0;
+                top: 0;
+                border-radius: 10px;
+            }
+
+            @keyframes glowing {
+                0% {
+                    background-position: 0 0;
+                }
+                50% {
+                    background-position: 400% 0;
+                }
+                100% {
+                    background-position: 0 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="fixed-top navbar navbar-expand-lg navbar-dark d-none d-lg-block" >
+                <div class="container-fluid">
+                    <a class="navbar-brand nav-link" target="_self" href="#!">
+                        <strong>Phoenixthrush's Website</strong>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" aria-current="page" href="#!" target="_self">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#!" rel="nofollow" target="_self">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#!" target="_self">View Projects</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav list-inline">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#!" rel="nofollow" target="_blank">Buy me a coffe ^^</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="container-fluid position-absolute top-50 start-50 translate-middle text-center text-white">
+                <hr />
+                <div class="row mb-3 d-flex align-items-center justify-content-center">
+                    <div class="col fs-2">Phoenixthrush - bootstrap version</div>
+                </div>
+                <hr />
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="col mt-4 fs-4">Some projects I made out of boredom.</div>
+                </div>
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="col fs-4">Made with much ❤️ and a lot of ☕</div>
+                </div>
+                <div class="row mx-auto w-25 mt-5 d-flex align-items-center justify-content-center">
+                    <button class="glow-on-hover" type="button" style="font-size: 20px">View Project on GitHub</button>
+                </div>
+                <div class="row mx-auto text-center mt-5 d-flex align-items-center justify-content-center">
+                    <div class="col-6">
+                        <p style="font-family: 'Open Sans'">Arguing that you don't care about the right to privacy because you have nothing to hide is no different than saying you don't care about free speech because you have nothing to say." - Edward Snowden</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="fixed-bottom text-center text-white">
+            <div class="container p-4 pb-0">
+                <section class="mb-1">
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" target="_blank" role="button"><i class="fab fa-github"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" target="_blank" role="button"><i class="fab fa-discord"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" target="_blank" role="button"><i class="fab fa-steam"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" target="_blank" role="button"><i class="fab fa-spotify"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" target="_blank" role="button"><i class="fab fa-paypal"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" target="_blank" role="button"><i class="fa-solid fa-envelope"></i></a>
+                </section>
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0)">
+                <a class="text-white" href="#!">Credits</a> ❤️ | © 2022 Copyright <a class="text-white" href="#!">www.phoenixthrush.com</a> |
+                <a class="text-white" href="#!">Terms of Service</a>
+            </div>
+            <img src="https://count.getloli.com/get/@phoenixthrush?theme=rule34" alt="Visitor Count" style="position: fixed; bottom: 0; right: 0; width: 250px">
+        </footer>
+
+        <script src="assets/js/jQuery/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+        <!-- Where The Magic Happens -->
+
+            <!-- NSA - Backdoor under construction -->
+            <!-- <script src="assets/js/main.min.js"></script> -->
+
+            <!-- Yup, you guessed it another secret lmao -->
+                <script>
+                    if (document.cookie == "fav-waifu=nezuko") {
+                        alert("woah, you found another secret!");
+                    }   
+                </script>
+
+            <!-- I should load all js easter eggs from only one file lmao -->
+                <script>
+                    hours = new Date().getHours();
+                    minutes = new Date().getMinutes();
+                    seconds = new Date().getSeconds();
+
+                    if (hours == 0 && minutes == 0 && seconds <= 3) {
+                        window.open("https://www.omfgdogs.com/", "_self");
+                    }
+
+                    if (hours == 3 && minutes == 0 && seconds <= 3) {
+                        sites = ["http://973-eht-namuh-973.com/", "https://fauux.neocities.org/", "http://www.lomando.com/main.html"];
+                        window.open(sites[Math.floor(Math.random() * sites.length)], "_self");
+                    }
+                </script>
+
+            <!-- Yeah absolutely -->
+                <script>
+                    backspace_count = 0;
+
+                    $("body").keyup(function (e) {
+                        if (e.keyCode == 8 && backspace_count == 200) {
+                            alert("wtf is wrong with you???");
+                        }
+
+                        backspace_count++;
+                    });
+                </script>
+    </body>
+</html>
+
+<!-- oh no
+00101000 01011100 00100000 00101111 00101001 00001010 00101000 01001111
+00101110 01101111 00101001 00001010 00101000 00111110 00100000 00111100
+00101001 00100000 01011001 01101111 01110101 00100000 01100110 01101111
+01110101 01101110 01100100 00100000 01100001 00100000 01110111 01101001
+01101100 01100100 00100000 01100010 01110101 01101110 01101110 01111001
+00100001 00100000 
+-->
